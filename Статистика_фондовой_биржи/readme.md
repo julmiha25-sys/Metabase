@@ -84,3 +84,24 @@ EDITOR=nano crontab -e
 
 <img width="916" height="384" alt="image" src="https://github.com/user-attachments/assets/ff7a6220-8310-47a0-8082-e98e015e7b68" />
 
+__**5.Настройка веб-сервера и Metabase**__
+
+1.Установка Docker (предварительно установить необходимые зависимости, добавить GPG ключ Docker, добавить официальный репозиторий Docker в список источников пакетов Ubuntu).
+
+sudo apt install docker.io
+
+2.Установка, разворачивание, запуск Metabase.
+
+sudo docker pull metabase/metabase:latest
+
+sudo docker run -d -p 3000:3000 --name metabase metabase/metabase
+
+udo docker ps –a
+
+3.Установка и запуск веб-сервера Nginx.
+
+udo apt install nginx
+
+sudo systemctl start nginx
+
+
