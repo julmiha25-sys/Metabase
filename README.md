@@ -1,3 +1,2 @@
-# Metabase
-Metabase projects
+Кейсы, реализованные на Metabase с использованием SQL. 
 
